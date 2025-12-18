@@ -1,0 +1,37 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-12-18 13:58:53
+============================
+
+Token: [1:1] KEYWORD "int"
+ENTER Program at [1:1] KEYWORD "int"
+  ENTER DeclarationList at [1:1] KEYWORD "int"
+    ENTER Declaration at [1:1] KEYWORD "int"
+Token: [1:5] IDENTIFIER "main"
+Token: [1:9] DELIMITER "("
+Token: [1:10] DELIMITER ")"
+Token: [1:12] DELIMITER "{"
+      ENTER CompoundStatement at [1:12] DELIMITER "{"
+Token: [1:14] KEYWORD "int"
+        ENTER StatementList at [1:14] KEYWORD "int"
+          ENTER Statement at [1:14] KEYWORD "int"
+            ENTER VarDeclaration at [1:14] KEYWORD "int"
+              ENTER Type at [1:14] KEYWORD "int"
+Token: [1:18] IDENTIFIER "x"
+              EXIT Type - SUCCESS
+Token: [1:20] OPERATOR "="
+Token: [1:22] DELIMITER ";"
+              ENTER Expression at [1:22] DELIMITER ";"
+                ENTER LogicalOrExpression at [1:22] DELIMITER ";"
+                  ENTER LogicalAndExpression at [1:22] DELIMITER ";"
+                    ENTER EqualityExpression at [1:22] DELIMITER ";"
+                      ENTER RelationalExpression at [1:22] DELIMITER ";"
+                        ENTER AdditiveExpression at [1:22] DELIMITER ";"
+                          ENTER MultiplicativeExpression at [1:22] DELIMITER ";"
+                            ENTER UnaryExpression at [1:22] DELIMITER ";"
+                              ENTER PrimaryExpression at [1:22] DELIMITER ";"
+ERROR at 1:22 - Expected identifier, literal, or '('
+
+=== PARSING COMPLETED ===
+Total nodes created: 10
+Errors encountered: 1
+Parse time: 0.081 ms

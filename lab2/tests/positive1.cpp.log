@@ -1,0 +1,80 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-12-18 13:58:53
+============================
+
+Token: [1:1] KEYWORD "int"
+ENTER Program at [1:1] KEYWORD "int"
+  ENTER DeclarationList at [1:1] KEYWORD "int"
+    ENTER Declaration at [1:1] KEYWORD "int"
+Token: [1:5] IDENTIFIER "main"
+Token: [1:9] DELIMITER "("
+Token: [1:10] DELIMITER ")"
+Token: [1:12] DELIMITER "{"
+      ENTER CompoundStatement at [1:12] DELIMITER "{"
+Token: [1:14] KEYWORD "int"
+        ENTER StatementList at [1:14] KEYWORD "int"
+          ENTER Statement at [1:14] KEYWORD "int"
+            ENTER VarDeclaration at [1:14] KEYWORD "int"
+              ENTER Type at [1:14] KEYWORD "int"
+Token: [1:18] IDENTIFIER "x"
+              EXIT Type - SUCCESS
+Token: [1:20] OPERATOR "="
+Token: [1:22] INTEGER "42"
+              ENTER Expression at [1:22] INTEGER "42"
+                ENTER LogicalOrExpression at [1:22] INTEGER "42"
+                  ENTER LogicalAndExpression at [1:22] INTEGER "42"
+                    ENTER EqualityExpression at [1:22] INTEGER "42"
+                      ENTER RelationalExpression at [1:22] INTEGER "42"
+                        ENTER AdditiveExpression at [1:22] INTEGER "42"
+                          ENTER MultiplicativeExpression at [1:22] INTEGER "42"
+                            ENTER UnaryExpression at [1:22] INTEGER "42"
+                              ENTER PrimaryExpression at [1:22] INTEGER "42"
+Token: [1:24] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:26] KEYWORD "return"
+            EXIT VarDeclaration - SUCCESS
+          EXIT Statement - SUCCESS
+          ENTER Statement at [1:26] KEYWORD "return"
+            ENTER ReturnStatement at [1:26] KEYWORD "return"
+Token: [1:33] IDENTIFIER "x"
+              ENTER Expression at [1:33] IDENTIFIER "x"
+                ENTER LogicalOrExpression at [1:33] IDENTIFIER "x"
+                  ENTER LogicalAndExpression at [1:33] IDENTIFIER "x"
+                    ENTER EqualityExpression at [1:33] IDENTIFIER "x"
+                      ENTER RelationalExpression at [1:33] IDENTIFIER "x"
+                        ENTER AdditiveExpression at [1:33] IDENTIFIER "x"
+                          ENTER MultiplicativeExpression at [1:33] IDENTIFIER "x"
+                            ENTER UnaryExpression at [1:33] IDENTIFIER "x"
+                              ENTER PrimaryExpression at [1:33] IDENTIFIER "x"
+Token: [1:34] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:36] DELIMITER "}"
+            EXIT ReturnStatement - SUCCESS
+          EXIT Statement - SUCCESS
+        EXIT StatementList - SUCCESS
+Token: [2:1] EOF ""
+      EXIT CompoundStatement - SUCCESS
+    EXIT Declaration - SUCCESS
+  EXIT DeclarationList - SUCCESS
+EXIT Program - SUCCESS
+
+=== PARSING COMPLETED ===
+Total nodes created: 13
+Errors encountered: 0
+Parse time: 0.059 ms

@@ -1,0 +1,66 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-12-18 13:58:53
+============================
+
+Token: [1:1] KEYWORD "int"
+ENTER Program at [1:1] KEYWORD "int"
+  ENTER DeclarationList at [1:1] KEYWORD "int"
+    ENTER Declaration at [1:1] KEYWORD "int"
+Token: [1:5] IDENTIFIER "main"
+Token: [1:9] DELIMITER "("
+Token: [1:10] DELIMITER ")"
+Token: [1:12] DELIMITER "{"
+      ENTER CompoundStatement at [1:12] DELIMITER "{"
+Token: [1:14] KEYWORD "if"
+        ENTER StatementList at [1:14] KEYWORD "if"
+          ENTER Statement at [1:14] KEYWORD "if"
+            ENTER IfStatement at [1:14] KEYWORD "if"
+Token: [1:17] DELIMITER "("
+Token: [1:18] INTEGER "1"
+              ENTER Expression at [1:18] INTEGER "1"
+                ENTER LogicalOrExpression at [1:18] INTEGER "1"
+                  ENTER LogicalAndExpression at [1:18] INTEGER "1"
+                    ENTER EqualityExpression at [1:18] INTEGER "1"
+                      ENTER RelationalExpression at [1:18] INTEGER "1"
+                        ENTER AdditiveExpression at [1:18] INTEGER "1"
+                          ENTER MultiplicativeExpression at [1:18] INTEGER "1"
+                            ENTER UnaryExpression at [1:18] INTEGER "1"
+                              ENTER PrimaryExpression at [1:18] INTEGER "1"
+Token: [1:20] DELIMITER "{"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:22] IDENTIFIER "x"
+              ENTER Statement at [1:22] IDENTIFIER "x"
+                ENTER ExpressionStatement at [1:22] IDENTIFIER "x"
+                  ENTER Expression at [1:22] IDENTIFIER "x"
+                    ENTER LogicalOrExpression at [1:22] IDENTIFIER "x"
+                      ENTER LogicalAndExpression at [1:22] IDENTIFIER "x"
+                        ENTER EqualityExpression at [1:22] IDENTIFIER "x"
+                          ENTER RelationalExpression at [1:22] IDENTIFIER "x"
+                            ENTER AdditiveExpression at [1:22] IDENTIFIER "x"
+                              ENTER MultiplicativeExpression at [1:22] IDENTIFIER "x"
+                                ENTER UnaryExpression at [1:22] IDENTIFIER "x"
+                                  ENTER PrimaryExpression at [1:22] IDENTIFIER "x"
+Token: [1:24] OPERATOR "="
+                                  EXIT PrimaryExpression - SUCCESS
+                                EXIT UnaryExpression - SUCCESS
+                              EXIT MultiplicativeExpression - SUCCESS
+                            EXIT AdditiveExpression - SUCCESS
+                          EXIT RelationalExpression - SUCCESS
+                        EXIT EqualityExpression - SUCCESS
+                      EXIT LogicalAndExpression - SUCCESS
+                    EXIT LogicalOrExpression - SUCCESS
+                  EXIT Expression - SUCCESS
+ERROR at 1:24 - Expected DELIMITER, found OPERATOR "="
+
+=== PARSING COMPLETED ===
+Total nodes created: 11
+Errors encountered: 1
+Parse time: 0.102 ms

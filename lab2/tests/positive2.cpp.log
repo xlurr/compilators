@@ -1,0 +1,160 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-12-18 13:58:53
+============================
+
+Token: [1:1] KEYWORD "int"
+ENTER Program at [1:1] KEYWORD "int"
+  ENTER DeclarationList at [1:1] KEYWORD "int"
+    ENTER Declaration at [1:1] KEYWORD "int"
+Token: [1:5] IDENTIFIER "factorial"
+Token: [1:14] DELIMITER "("
+Token: [1:15] KEYWORD "int"
+      ENTER ParameterList at [1:15] KEYWORD "int"
+        ENTER Parameter at [1:15] KEYWORD "int"
+          ENTER Type at [1:15] KEYWORD "int"
+Token: [1:19] IDENTIFIER "n"
+          EXIT Type - SUCCESS
+Token: [1:20] DELIMITER ")"
+        EXIT Parameter - SUCCESS
+      EXIT ParameterList - SUCCESS
+Token: [1:22] DELIMITER "{"
+      ENTER CompoundStatement at [1:22] DELIMITER "{"
+Token: [1:24] KEYWORD "if"
+        ENTER StatementList at [1:24] KEYWORD "if"
+          ENTER Statement at [1:24] KEYWORD "if"
+            ENTER IfStatement at [1:24] KEYWORD "if"
+Token: [1:27] DELIMITER "("
+Token: [1:28] IDENTIFIER "n"
+              ENTER Expression at [1:28] IDENTIFIER "n"
+                ENTER LogicalOrExpression at [1:28] IDENTIFIER "n"
+                  ENTER LogicalAndExpression at [1:28] IDENTIFIER "n"
+                    ENTER EqualityExpression at [1:28] IDENTIFIER "n"
+                      ENTER RelationalExpression at [1:28] IDENTIFIER "n"
+                        ENTER AdditiveExpression at [1:28] IDENTIFIER "n"
+                          ENTER MultiplicativeExpression at [1:28] IDENTIFIER "n"
+                            ENTER UnaryExpression at [1:28] IDENTIFIER "n"
+                              ENTER PrimaryExpression at [1:28] IDENTIFIER "n"
+Token: [1:30] OPERATOR "<="
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+Token: [1:33] INTEGER "1"
+                        ENTER AdditiveExpression at [1:33] INTEGER "1"
+                          ENTER MultiplicativeExpression at [1:33] INTEGER "1"
+                            ENTER UnaryExpression at [1:33] INTEGER "1"
+                              ENTER PrimaryExpression at [1:33] INTEGER "1"
+Token: [1:34] DELIMITER ")"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:36] KEYWORD "return"
+              ENTER Statement at [1:36] KEYWORD "return"
+                ENTER ReturnStatement at [1:36] KEYWORD "return"
+Token: [1:43] INTEGER "1"
+                  ENTER Expression at [1:43] INTEGER "1"
+                    ENTER LogicalOrExpression at [1:43] INTEGER "1"
+                      ENTER LogicalAndExpression at [1:43] INTEGER "1"
+                        ENTER EqualityExpression at [1:43] INTEGER "1"
+                          ENTER RelationalExpression at [1:43] INTEGER "1"
+                            ENTER AdditiveExpression at [1:43] INTEGER "1"
+                              ENTER MultiplicativeExpression at [1:43] INTEGER "1"
+                                ENTER UnaryExpression at [1:43] INTEGER "1"
+                                  ENTER PrimaryExpression at [1:43] INTEGER "1"
+Token: [1:44] DELIMITER ";"
+                                  EXIT PrimaryExpression - SUCCESS
+                                EXIT UnaryExpression - SUCCESS
+                              EXIT MultiplicativeExpression - SUCCESS
+                            EXIT AdditiveExpression - SUCCESS
+                          EXIT RelationalExpression - SUCCESS
+                        EXIT EqualityExpression - SUCCESS
+                      EXIT LogicalAndExpression - SUCCESS
+                    EXIT LogicalOrExpression - SUCCESS
+                  EXIT Expression - SUCCESS
+Token: [1:46] KEYWORD "else"
+                EXIT ReturnStatement - SUCCESS
+              EXIT Statement - SUCCESS
+Token: [1:51] KEYWORD "return"
+              ENTER Statement at [1:51] KEYWORD "return"
+                ENTER ReturnStatement at [1:51] KEYWORD "return"
+Token: [1:58] IDENTIFIER "n"
+                  ENTER Expression at [1:58] IDENTIFIER "n"
+                    ENTER LogicalOrExpression at [1:58] IDENTIFIER "n"
+                      ENTER LogicalAndExpression at [1:58] IDENTIFIER "n"
+                        ENTER EqualityExpression at [1:58] IDENTIFIER "n"
+                          ENTER RelationalExpression at [1:58] IDENTIFIER "n"
+                            ENTER AdditiveExpression at [1:58] IDENTIFIER "n"
+                              ENTER MultiplicativeExpression at [1:58] IDENTIFIER "n"
+                                ENTER UnaryExpression at [1:58] IDENTIFIER "n"
+                                  ENTER PrimaryExpression at [1:58] IDENTIFIER "n"
+Token: [1:60] OPERATOR "*"
+                                  EXIT PrimaryExpression - SUCCESS
+                                EXIT UnaryExpression - SUCCESS
+Token: [1:62] IDENTIFIER "factorial"
+                                ENTER UnaryExpression at [1:62] IDENTIFIER "factorial"
+                                  ENTER PrimaryExpression at [1:62] IDENTIFIER "factorial"
+                                    ENTER FunctionCall at [1:62] IDENTIFIER "factorial"
+Token: [1:71] DELIMITER "("
+Token: [1:72] IDENTIFIER "n"
+                                      ENTER ArgumentList at [1:72] IDENTIFIER "n"
+                                        ENTER Expression at [1:72] IDENTIFIER "n"
+                                          ENTER LogicalOrExpression at [1:72] IDENTIFIER "n"
+                                            ENTER LogicalAndExpression at [1:72] IDENTIFIER "n"
+                                              ENTER EqualityExpression at [1:72] IDENTIFIER "n"
+                                                ENTER RelationalExpression at [1:72] IDENTIFIER "n"
+                                                  ENTER AdditiveExpression at [1:72] IDENTIFIER "n"
+                                                    ENTER MultiplicativeExpression at [1:72] IDENTIFIER "n"
+                                                      ENTER UnaryExpression at [1:72] IDENTIFIER "n"
+                                                        ENTER PrimaryExpression at [1:72] IDENTIFIER "n"
+Token: [1:74] OPERATOR "-"
+                                                        EXIT PrimaryExpression - SUCCESS
+                                                      EXIT UnaryExpression - SUCCESS
+                                                    EXIT MultiplicativeExpression - SUCCESS
+Token: [1:76] INTEGER "1"
+                                                    ENTER MultiplicativeExpression at [1:76] INTEGER "1"
+                                                      ENTER UnaryExpression at [1:76] INTEGER "1"
+                                                        ENTER PrimaryExpression at [1:76] INTEGER "1"
+Token: [1:77] DELIMITER ")"
+                                                        EXIT PrimaryExpression - SUCCESS
+                                                      EXIT UnaryExpression - SUCCESS
+                                                    EXIT MultiplicativeExpression - SUCCESS
+                                                  EXIT AdditiveExpression - SUCCESS
+                                                EXIT RelationalExpression - SUCCESS
+                                              EXIT EqualityExpression - SUCCESS
+                                            EXIT LogicalAndExpression - SUCCESS
+                                          EXIT LogicalOrExpression - SUCCESS
+                                        EXIT Expression - SUCCESS
+                                      EXIT ArgumentList - SUCCESS
+Token: [1:78] DELIMITER ";"
+                                    EXIT FunctionCall - SUCCESS
+                                  EXIT PrimaryExpression - SUCCESS
+                                EXIT UnaryExpression - SUCCESS
+                              EXIT MultiplicativeExpression - SUCCESS
+                            EXIT AdditiveExpression - SUCCESS
+                          EXIT RelationalExpression - SUCCESS
+                        EXIT EqualityExpression - SUCCESS
+                      EXIT LogicalAndExpression - SUCCESS
+                    EXIT LogicalOrExpression - SUCCESS
+                  EXIT Expression - SUCCESS
+Token: [1:80] DELIMITER "}"
+                EXIT ReturnStatement - SUCCESS
+              EXIT Statement - SUCCESS
+            EXIT IfStatement - SUCCESS
+          EXIT Statement - SUCCESS
+        EXIT StatementList - SUCCESS
+Token: [2:1] EOF ""
+      EXIT CompoundStatement - SUCCESS
+    EXIT Declaration - SUCCESS
+  EXIT DeclarationList - SUCCESS
+EXIT Program - SUCCESS
+
+=== PARSING COMPLETED ===
+Total nodes created: 25
+Errors encountered: 0
+Parse time: 0.134 ms

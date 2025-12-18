@@ -1,0 +1,47 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-12-18 13:58:53
+============================
+
+Token: [1:1] KEYWORD "int"
+ENTER Program at [1:1] KEYWORD "int"
+  ENTER DeclarationList at [1:1] KEYWORD "int"
+    ENTER Declaration at [1:1] KEYWORD "int"
+Token: [1:5] IDENTIFIER "main"
+Token: [1:9] DELIMITER "("
+Token: [1:10] DELIMITER ")"
+Token: [1:12] DELIMITER "{"
+      ENTER CompoundStatement at [1:12] DELIMITER "{"
+Token: [1:14] KEYWORD "int"
+        ENTER StatementList at [1:14] KEYWORD "int"
+          ENTER Statement at [1:14] KEYWORD "int"
+            ENTER VarDeclaration at [1:14] KEYWORD "int"
+              ENTER Type at [1:14] KEYWORD "int"
+Token: [1:18] IDENTIFIER "x"
+              EXIT Type - SUCCESS
+Token: [1:20] OPERATOR "="
+Token: [1:22] INTEGER "10"
+              ENTER Expression at [1:22] INTEGER "10"
+                ENTER LogicalOrExpression at [1:22] INTEGER "10"
+                  ENTER LogicalAndExpression at [1:22] INTEGER "10"
+                    ENTER EqualityExpression at [1:22] INTEGER "10"
+                      ENTER RelationalExpression at [1:22] INTEGER "10"
+                        ENTER AdditiveExpression at [1:22] INTEGER "10"
+                          ENTER MultiplicativeExpression at [1:22] INTEGER "10"
+                            ENTER UnaryExpression at [1:22] INTEGER "10"
+                              ENTER PrimaryExpression at [1:22] INTEGER "10"
+Token: [1:25] KEYWORD "return"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+ERROR at 1:25 - Expected DELIMITER, found KEYWORD "return"
+
+=== PARSING COMPLETED ===
+Total nodes created: 11
+Errors encountered: 1
+Parse time: 0.103 ms
