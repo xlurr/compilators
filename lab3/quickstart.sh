@@ -8,7 +8,7 @@ echo "║   CODE GENERATOR LAB - QUICK START SCRIPT                 ║"
 echo "╚════════════════════════════════════════════════════════════╝"
 echo ""
 
-# Check if directories exist
+# Create required directories
 mkdir -p bin output test
 
 echo "► Building project..."
@@ -19,22 +19,22 @@ echo ""
 
 echo "► Running Example 1: Simple Arithmetic"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-./bin/compiler test/example1.txt
+./bin/compiler test/example1.txt -o output/example1.tac
 echo ""
 
 echo "► Running Example 2: Loops and Conditionals"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-./bin/compiler test/example2.txt
+./bin/compiler test/example2.txt -o output/example2.tac
 echo ""
 
 echo "► Running Example 3: Optimization Demo"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-./bin/compiler test/example3.txt
+./bin/compiler test/example3.txt -o output/example3.tac
 echo ""
 
 echo "► Running Example 4: Factorial (Complex)"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-./bin/compiler test/example4.txt
+./bin/compiler test/example4.txt -o output/example4.tac
 echo ""
 
 echo "► Running Negative Tests (Error Handling)"
@@ -48,8 +48,6 @@ echo ""
 
 echo "✓ All tests completed!"
 echo ""
-echo "Additional options:"
-echo "  ./bin/compiler <file> -tokens     # Show tokenization"
-echo "  ./bin/compiler <file> -noopt      # Disable optimization"
-echo "  ./bin/compiler <file> -o output   # Save TAC to file"
+echo "Generated TAC files:"
+ls -1 output/*.tac 2>/dev/null || echo "  (no files generated)"
 echo ""
